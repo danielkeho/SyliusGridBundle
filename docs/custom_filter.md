@@ -15,7 +15,7 @@ use Sylius\Component\Grid\Filtering\FilterInterface;
 
 class SuppliersStatisticsFilter implements FilterInterface
 {
-    public function apply(DataSourceInterface $dataSource, $name, $data, array $options = [])
+    public function apply(DataSourceInterface $dataSource, $name, $data, array $options = []) : void
     {
         // Your filtering logic. DataSource is kind of query builder.
         // $data['stats'] contains the submitted value!
